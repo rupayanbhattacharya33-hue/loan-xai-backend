@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: loan-xai-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend:app
+    pythonVersion: "3.11.0"
